@@ -1,7 +1,7 @@
 ---
 title: Bulma Clean Theme
 subtitle: This is the demo site for Bulma Clean Theme
-layout: page
+layout: default
 callouts: home_callouts
 show_sidebar: true
 ---
@@ -11,7 +11,7 @@ show_sidebar: true
 Hi, 
 
 <!-- # Bulma Clean Theme demo website
-
+layout: page
 This website showcases the options for the Bulma Clean theme. The theme is available as a ruby gem or can be used with GitHub pages. 
 
 [![Gem Version](https://badge.fury.io/rb/bulma-clean-theme.svg)](https://badge.fury.io/rb/bulma-clean-theme)
