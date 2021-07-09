@@ -1,37 +1,80 @@
-title: Jiwon's blog
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-permalink: ':title/'
-baseurl: "" # the subpath of your site, e.g. /blog
-url: https://yooonjiwon.github.io/ # the base hostname & protocol for your site, e.g. http://example.com
-#site-twitter: #if your site has a twitter account, enter it here
+# Site Settings
+lang: en
+title: Bulma Clean Theme
+tagline: Bulma Clean Theme
+email: your-email@domain.com
+description: >
+  The demo site for Bulma Clean Theme, made for Jekyll and GitHub pages websites
+baseurl: "/bulma-clean-theme"
+url: "https://www.csrhymes.com"
+permalink: pretty
+#favicon: /path/to/favicon.png
+gh_sponsor: chrisrhymes
+#hide_share_buttons: true
+#theme_color: '#eeeeee'
+#fixed_navbar: top
 
-# Author Settings
-author: Jiwon Yoon # add your name
-author-img: profile.jpg # add your photo
-about-author: I am a medical data analyst focusing on medical/epidemiology research using data. Always hungry to keep learning. # add description
-#social-twitter: # add your Twitter handle
-#social-facebook: # add your Facebook handle
-social-github: https://github.com/yooonjiwon # add your Github handle
-social-linkedin: # add your Linkedin handle
-social-email: # add your Email address
+paginate: 5
+paginate_path: "/blog/page:num"
 
-# Disqus
-discus-identifier:  # add your discus identifier
+# Disqus Comments
+disqus:
+  # Leave shortname blank to disable comments site-wide.
+  # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
+  # shortname: my_disqus_shortname
+  shortname: csrhymes
 
-# Tracker
-analytics: # Google Analytics
 
-# Build Settings
-markdown: kramdown
 plugins:
   - jekyll-sitemap
   - jekyll-paginate
-  - jemoji
+  - jekyll-feed
+  - jekyll-seo-tag
+  - kramdown-parser-gfm
 
-paginate: 8
-paginate_path: "/page/:num"
+exclude: 
+  - Gemfile
+  - clean-theme.gemspec
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
 
-exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
+livereload: true
+
+sass:
+  style: compressed
+  source_dir: _sass
+
+#google_analytics: UA-code-here
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      show_sidebar: true
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      author: "C.S. Rhymes"
+      layout: post
+      image: https://via.placeholder.com/1200x800
+      show_sidebar: true
+
+markdown: kramdown
+highlighter: rouge
+
+footer_menu: example_footer_menu
+
+collections:
+  products: 
+    output: true
+    layout: product
+    image: https://via.placeholder.com/800x600
+    show_sidebar: false
