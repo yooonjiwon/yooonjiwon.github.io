@@ -1,8 +1,8 @@
 # Site Settings
 lang: en
-title: J blog
-tagline: Bulma Clean Theme
-email: your-email@domain.com
+title: Riley Yoon
+tagline: Welcome!
+email: yoon.jiwon.g@gmail.com
 description: >
   Blog for AI study
 # baseurl: "/bulma-clean-theme"
@@ -10,10 +10,12 @@ description: >
 url: "https://yooonjiwon.github.io"
 permalink: pretty
 #favicon: /path/to/favicon.png
-gh_sponsor: chrisrhymes
+# gh_sponsor: chrisrhymes
 #hide_share_buttons: true
 #theme_color: '#eeeeee'
 #fixed_navbar: top
+hide_hero: true
+
 remote_theme: chrisrhymes/bulma-clean-theme
 
 paginate: 5
@@ -59,6 +61,7 @@ defaults:
       type: "pages"
     values:
       show_sidebar: true
+      
   -
     scope:
       path: ""

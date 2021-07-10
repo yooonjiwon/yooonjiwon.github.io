@@ -1,7 +1,7 @@
 ---
-title: Bulma Clean Theme
-subtitle: This is the demo site for Bulma Clean Theme
-layout: default
+title: Riley's blog
+subtitle: I am a data scientist interested in artificial intelligence analyzing with medical data.
+layout: page
 callouts: home_callouts
 show_sidebar: true
 ---
